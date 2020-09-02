@@ -16,9 +16,9 @@
     $arrayClass = new workWithArray($size,$dimensions);
     $arrayClass->setArray()
                ->setSimplifiedArray();
-    echo $twig->render('demo.twig', ['array' => $arrayClass->getArray(), 'minValue' => $arrayClass->getMinVal(), 'maxValue' => $arrayClass->getMaxVal(), 'dimensions'=>$dimensions, 'size'=>$size]);
+    echo $twig->render('arrayTask.twig', ['array' => $arrayClass->getArray(), 'minValue' => $arrayClass->getMinVal(), 'maxValue' => $arrayClass->getMaxVal(), 'dimensions'=>$dimensions, 'size'=>$size]);
     }else{
-    echo $twig->render('demo.twig', ['array' => [], 'minValue' => 0, 'maxValue' => 0, null, null]);   
+    echo $twig->render('arrayTask.twig', ['array' => [], 'minValue' => 0, 'maxValue' => 0, null, null]);   
     }
        
         
